@@ -1,0 +1,21 @@
+<div>
+  <section>
+    <button *ngIf="beforeStart" (click)="startGame()">Start</button>
+    <p *ngIf="beforeStart">Test your listening skill. You can check the word and it's definition, but then you will not get a point.</p>
+    <img *ngIf="!beforeStart" src="../assets/speaker-g491b70c12_640.png" alt="loudspeaker" (click)="speak()">
+    <h2 *ngIf="!beforeStart"><span id='good'>{{goodAns}}</span> | <span id="bad">{{badAns}}</span></h2>
+  </section>
+  <article *ngIf="!beforeStart">
+    <input type="text" autofocus [(ngModel)]="answer" (keydown.enter)="checkWord()">
+    <button type="submit" (click)="checkWord()">Check</button>
+  </article>
+  <button *ngIf="!beforeStart" id="search" (click)="search(this.pickedWord)" [disabled]="this.fetched">Search</button>
+  <span *ngIf="this.data">
+    <h3>{{this.pickedWord}}</h3>
+    <ul >
+      <li *ngFor="let elem of data"><b>{{elem.partOfSpeech}}</b><ul>
+        <li *ngFor="let def of elem.definitions">{{def.definition}}</li>
+      </ul></li>
+    </ul>
+  </span>
+</div>

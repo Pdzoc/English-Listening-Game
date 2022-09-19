@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: palegoldenrod;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+input, button {
+    font-family: 'Fira Sans', sans-serif;
+    background: none;
+    font-size: large;
+}
+
+section button {
+    font-size: xx-large;
+    padding:  7px 20px;
+}
+
+img {
+    cursor: pointer;
+}
+
+img:hover {
+    scale: 1.1;
+}
+
+button {
+    padding: 2px 7px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+button:hover {
+    font-weight: bolder;
+}
+
+input {
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed black;
+}
+
+input:focus {
+    border-bottom: 3px solid black
+}

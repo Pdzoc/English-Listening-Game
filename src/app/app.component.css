@@ -1,0 +1,14 @@
+img {
+    width: 50px;
+}
+
+#good {color: green;}
+#bad {color: red;}
+
+ul {
+    text-align: left;
+}
+
+#search {
+    margin-top: 10px;
+}
