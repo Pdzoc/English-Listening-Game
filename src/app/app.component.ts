@@ -41,7 +41,6 @@ export class AppComponent implements OnInit {
     this.data = null;
     this.fetched = false;
     this.pickedWord = this.pickWord();
-    console.log(this.pickedWord)
     this.utterThis = new SpeechSynthesisUtterance(this.pickedWord);
     this.utterThis.lang = 'en-US';
     this.utterThis.rate = 0.4;
@@ -62,7 +61,6 @@ export class AppComponent implements OnInit {
   search(word) {
     this.fetched = true;
     return this.http.get('https://api.dictionaryapi.dev/api/v2/entries/en/'+word).subscribe(el => {
-      console.log(el[0].meanings);
       this.data = el[0].meanings
     })
   }
