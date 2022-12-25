@@ -4,3 +4,6 @@ Type what you hear and try to score as many points as possible! You can also che
 Live: https://jolly-torte-35d746.netlify.app/  
 
 ![engGame](https://user-images.githubusercontent.com/71113600/191092162-2569de79-e241-400f-b054-fd68d562d1e5.jpg)
+
+* https://github.com/meetDeveloper/freeDictionaryAPI
+* https://dictionaryapi.dev/
